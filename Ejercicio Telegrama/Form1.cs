@@ -25,6 +25,9 @@ namespace Ejercicio_Telegrama
             double coste;
             //Leo el telegrama
             textoTelegrama = txtTelegrama.Text;
+            //AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA232314141414141414wagwgreheehehejejejej
+
+            int num1 = 0;
             // telegrama urgente?
             if (chkUrgente.Checked)
             {
