@@ -101,6 +101,29 @@
             this.cbUrgente.Text = "Urgente";
             this.cbUrgente.UseVisualStyleBackColor = true;
             // 
+            // cbOrdinario
+            // 
+            this.cbOrdinario.AutoSize = true;
+            this.cbOrdinario.Location = new System.Drawing.Point(88, 253);
+            this.cbOrdinario.Name = "cbOrdinario";
+            this.cbOrdinario.Size = new System.Drawing.Size(65, 17);
+            this.cbOrdinario.TabIndex = 6;
+            this.cbOrdinario.TabStop = true;
+            this.cbOrdinario.Text = "ordinario";
+            this.cbOrdinario.UseVisualStyleBackColor = true;
+            // 
+            // cbUrgente
+            // 
+            this.cbUrgente.AutoSize = true;
+            this.cbUrgente.Location = new System.Drawing.Point(201, 253);
+            this.cbUrgente.Name = "cbUrgente";
+            this.cbUrgente.Size = new System.Drawing.Size(69, 17);
+            this.cbUrgente.TabIndex = 7;
+            this.cbUrgente.TabStop = true;
+            this.cbUrgente.Text = "Urgente?";
+            this.cbUrgente.UseVisualStyleBackColor = true;
+            this.cbUrgente.CheckedChanged += new System.EventHandler(this.cbUrgente_CheckedChanged);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
