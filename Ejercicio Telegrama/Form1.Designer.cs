@@ -75,9 +75,31 @@
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(106, 61);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(34, 13);
+            this.label2.Size = new System.Drawing.Size(40, 13);
             this.label2.TabIndex = 5;
-            this.label2.Text = "Texto";
+            this.label2.Text = "Texto..";
+            // 
+            // cbOrdinario
+            // 
+            this.cbOrdinario.AutoSize = true;
+            this.cbOrdinario.Location = new System.Drawing.Point(55, 261);
+            this.cbOrdinario.Name = "cbOrdinario";
+            this.cbOrdinario.Size = new System.Drawing.Size(67, 17);
+            this.cbOrdinario.TabIndex = 6;
+            this.cbOrdinario.TabStop = true;
+            this.cbOrdinario.Text = "Ordinario";
+            this.cbOrdinario.UseVisualStyleBackColor = true;
+            // 
+            // cbUrgente
+            // 
+            this.cbUrgente.AutoSize = true;
+            this.cbUrgente.Location = new System.Drawing.Point(212, 261);
+            this.cbUrgente.Name = "cbUrgente";
+            this.cbUrgente.Size = new System.Drawing.Size(63, 17);
+            this.cbUrgente.TabIndex = 7;
+            this.cbUrgente.TabStop = true;
+            this.cbUrgente.Text = "Urgente";
+            this.cbUrgente.UseVisualStyleBackColor = true;
             // 
             // cbOrdinario
             // 
