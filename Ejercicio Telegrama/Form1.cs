@@ -25,22 +25,22 @@ namespace Ejercicio_Telegrama
             double coste;
             //Leo el telegrama
             textoTelegrama = txtTelegrama.Text;
-            //AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA232314141414141414wagwgreheehehejejejej
+            
 
             int num1 = 0;
             // telegrama urgente?
-            if (chkUrgente.Checked)
+            if (cbUrgente.Checked)
             {
                 tipoTelegrama = 'u';
             }
             //Obtengo el número de palabras que forma el telegrama
-            numPalabras = textoTelegrama.Length;
+            numPalabras = textoTelegrama.Split(new[] { ' ' }, StringSplitOptions.RemoveEmptyEntries).Length;
             //Si el telegrama es ordinario
             if (tipoTelegrama == 'o')
             {
                 if (numPalabras <= 10)
                 {
-                    coste = 2.5;
+                    coste = 3;
                 }
                 else
                 {
@@ -54,11 +54,11 @@ namespace Ejercicio_Telegrama
                 {
                     if (numPalabras <= 10)
                     {
-                        coste = 5;
+                        coste = 6;
                     }
                     else
                     {
-                        coste = 5 + 0.75 * (numPalabras - 10);
+                        coste = 6 + 0.75 * (numPalabras - 10);
                     }
                 }
                 else
@@ -67,6 +67,11 @@ namespace Ejercicio_Telegrama
                 }
             }
             txtPrecio.Text = coste.ToString() + " euros";
+        }
+
+        private void cbUrgente_CheckedChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
